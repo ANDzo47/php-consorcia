@@ -18,7 +18,7 @@
 if (!is_null(getenv('SERVER_ADDR'))) {
 	$config['base_url']	= getenv('SERVER_ADDR');
 } else {
-	$config['base_url']	= '';
+	$config['base_url']	= 'http://php-consorcia-consortium.a3c1.starter-us-west-1.openshiftapps.com/';
 }
 
 /*
