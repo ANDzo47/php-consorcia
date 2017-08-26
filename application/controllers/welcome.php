@@ -27,6 +27,7 @@ class Welcome extends MY_Controller {
             $this->load->view('common/header');
             $this->load->view('home/home');
             $this->load->view('common/footer');
+            echo phpinfo();
 	}
 
 	public function info()
