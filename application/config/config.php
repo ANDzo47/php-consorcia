@@ -15,7 +15,7 @@
 |
 */
 
-$config['base_url']	= '';
+$config['base_url']	= 'http://php-consorcia-consortium.a3c1.starter-us-west-1.openshiftapps.com';
 
 /*
 |--------------------------------------------------------------------------
