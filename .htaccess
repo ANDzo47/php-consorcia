@@ -10,7 +10,7 @@ RewriteRule ^(.+)/$ /$1 [L,R=301]
 
 # remove index.php from URL
 RewriteBase /
+RewriteCond $1 !^(index\.php|assets|robots\.txt)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond $1 !^(index\.php|admin|images|assets|favicon\.ico|rss\.xml|sitemap\.xml|BingSiteAuth\.xml|robots\.txt)
-RewriteRule ^(.*)$ index.php [L]
+RewriteRule ^(.*)$ /index.php/$1 [L]
