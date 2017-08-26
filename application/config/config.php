@@ -15,7 +15,7 @@
 |
 */
 
-if (isset(getenv('SERVER_ADDR'))) {
+if (!is_null(getenv('SERVER_ADDR'))) {
 	$config['base_url']	= getenv('SERVER_ADDR');
 } else {
 	$config['base_url']	= '';
