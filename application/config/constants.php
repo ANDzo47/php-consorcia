@@ -44,9 +44,9 @@ define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 |
 */
 
-define('BASE_CSS', 'assets/css');
-define('BASE_IMG', 'assets/img');
-define('BASE_JS', 'assets/js');
+define('BASE_CSS', '/assets/css');
+define('BASE_IMG', '/assets/img');
+define('BASE_JS', '/assets/js');
 
 /*
 |--------------------------------------------------------------------------
