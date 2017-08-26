@@ -6,19 +6,19 @@ function var_die($parameter){
 }
 
 function url_css($css){
-    return base_url().BASE_CSS.$css;
+    return site_url().BASE_CSS.$css;
 }
 
 function url_js($js){
-    return base_url().BASE_JS.$js;
+    return site_url().BASE_JS.$js;
 }
 
 function url_img($img){
-    return base_url().BASE_IMG.$img;
+    return site_url().BASE_IMG.$img;
 }
 
 function url_view($uri){
-    return base_url().$uri;
+    return site_url().$uri;
 }
 
 function get_month_dates_from_date($date)
