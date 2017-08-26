@@ -25,12 +25,6 @@
           <div class="login_header">Inicie sesión</div>
 
           <div class="login_div">
-              <?= $_SERVER['SERVER_ADDR']; ?> -
-              <?= $_SERVER['HTTPS']; ?> -
-              <?= $_SERVER['SCRIPT_NAME']; ?> -
-              <?= $_SERVER['SCRIPT_FILENAME']; ?>
-              
-
               <?php echo validation_errors(); ?>
               <?php echo form_open('verifylogin'); ?>
                   
