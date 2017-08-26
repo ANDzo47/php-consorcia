@@ -84,6 +84,9 @@ if ( ! function_exists('current_url'))
 	function current_url()
 	{
 		$CI =& get_instance();
+		var_dump($CI->uri->uri_string());
+		var_dump($CI->config->site_url($CI->uri->uri_string()));
+		var_die($CI);
 		return $CI->config->site_url($CI->uri->uri_string());
 	}
 }
