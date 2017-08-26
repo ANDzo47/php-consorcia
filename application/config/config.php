@@ -14,7 +14,13 @@
 | path to your installation.
 |
 */
-$config['base_url']	= '';
+
+if (isset(get_env('SERVER_ADDR'))) {
+	$config['base_url']	= get_env('SERVER_ADDR');
+} else {
+	$config['base_url']	= '';
+}
+
 
 /*
 |--------------------------------------------------------------------------
