@@ -15,12 +15,11 @@
 |
 */
 
-if (isset(get_env('SERVER_ADDR'))) {
-	$config['base_url']	= get_env('SERVER_ADDR');
+if (isset(getenv('SERVER_ADDR'))) {
+	$config['base_url']	= getenv('SERVER_ADDR');
 } else {
 	$config['base_url']	= '';
 }
-
 
 /*
 |--------------------------------------------------------------------------
