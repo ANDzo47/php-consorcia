@@ -56,7 +56,7 @@
         <ul id="menu">
           <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
           <li <? if(current_url() == url_view('home') || current_url() == url_view('') ): ?>class="selected"<? endif;?>><a href="<?= url_view('home')?>">Inicio</a></li>
-          <li <? if(current_url() == url_view('buildings')): ?>class="selected"<? endif;?>><a href="<?= url_view('buildings')?>">Edificios</a></li>
+          <li <? if(current_url() == url_view('buildings')){ ?>class="selected"<? } ?> ><a href="<?= url_view('buildings')?>">Edificios</a></li>
           <li <? if(current_url() == url_view('incomes')): ?>class="selected"<? endif;?>> <a href="<?= url_view('incomes')?>">Ingresos</a></li>
           <li <? if(current_url() == url_view('expenses')): ?>class="selected"<? endif;?>><a href="<?= url_view('expenses')?>">Egresos</a></li>
           <li <? if(current_url() == url_view('adjustments')): ?>class="selected"<? endif;?>><a href="<?= url_view('adjustments')?>">Ajuste base</a></li>
