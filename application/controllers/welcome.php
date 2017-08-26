@@ -29,6 +29,11 @@ class Welcome extends MY_Controller {
             $this->load->view('common/footer');
 	}
 
+	public function info()
+	{
+		echo phpinfo();
+	}
+
 	public function update_property_pay_bank_id()
 	{
             $buildings = Building::find('all');
