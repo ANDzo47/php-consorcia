@@ -4,7 +4,7 @@
     <title>Consortium</title>
         <meta name="description" content="website description" />
         <meta name="keywords" content="website keywords, website keywords" />
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
         <script type="text/javascript" src="<?= url_js('/home/jquery.js')?>"></script>
         <script type="text/javascript" src="<?= url_js('/home/jquery-ui.js')?>"></script>
         <script type="text/javascript" src="<?= url_js('/home/jquery.form.js')?>"></script>
