@@ -15,6 +15,7 @@
         <link rel="stylesheet" type="text/css" href="<?= url_css("/home/style.css") ?>" />
         <link rel="stylesheet" type="text/css" href="<?= url_css("/home/tabs.css") ?>" />
         <link rel="stylesheet" type="text/css" href="<?= url_css("/font-awesome.min.css") ?>" />
+    <? echo uri_string(); ?>
     <? if(uri_string() != '' ): ?>
         <script type="text/javascript" src="<?= url_js("/".uri_string()."/".uri_string().".js")?>"></script>
         <link rel="stylesheet" type="text/css" href="<?= url_css("/".uri_string()."/".uri_string().".css") ?>" />
