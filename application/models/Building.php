@@ -67,6 +67,10 @@ class Building extends ActiveRecord\Model{
         }
         return $properties;
     }
+
+    public function pay_by_bank(){
+        return ($this->payment_type > BUILDING_PAYMENT_TYPE_MANUAL);
+    }
        
     public function expense_month_period(){
         

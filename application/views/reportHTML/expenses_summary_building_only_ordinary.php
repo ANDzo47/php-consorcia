@@ -105,7 +105,7 @@ if ($properties):
 
         </div>
     </div>
-    <? if ($pay_days): ?>
+    <? if ($pay_days && !($building->pay_by_bank())): ?>
     <div class="footer_days">
         <div class="header_footer_days">
                 <div class="pay_day_title">Días de Cobro <?= $building->month_name_actual_period(); ?> <?= date('Y'); ?></div>

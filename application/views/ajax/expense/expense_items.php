@@ -26,7 +26,7 @@ $(document).ready(function() {
                 <th>Tipo</th>
                 <th>Fecha</th>
                 <th>Prioridad</th>
-                <th>Edicion</th>
+                <th class="th_edition">Edicion</th>
             </tr>
         </thead>
         <tbody>
