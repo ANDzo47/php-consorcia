@@ -48,8 +48,8 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-// $db['default']['hostname'] = '127.6.131.2';
-$db['default']['hostname'] = '172.30.24.197';
+$db['default']['hostname'] = '10.129.92.87';
+//$db['default']['hostname'] = '127.0.0.1';
 $db['default']['username'] = 'adminZM1rvtI';
 $db['default']['password'] = '5DwiWu8dshPZ';
 $db['default']['database'] = 'consorcia';
