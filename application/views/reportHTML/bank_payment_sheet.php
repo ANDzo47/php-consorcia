@@ -95,7 +95,7 @@
                         </td>
                         <td><div class="to_right"><?= number_format($property->value_to_pay_extraordinary($period),2) ?></div></td>
                         <td>
-                            <? if (IncomeTransaction::exist_bank_payment_by_code($property->get_current_extraordinary_payment_font_code())): ?>
+                            <? if (ExtraordinaryTransaction::exist_bank_payment($property->get_current_extraordinary_payment_font_code())): ?>
                                 <span class="highlight">SI</span>
                             <? endif; ?>
                         </td>
