@@ -27,8 +27,11 @@
                 <td><?= $period->value ?></td>
                 <td><?= $period->period_state_name() ?></td>
                 <td>
-                    <i class="fa fa-window-close fa-lg" onclick="delete_extraordinary(<?= $period->id ?>)"></i>
-                </td>            
+                    <i class="fa fa-trash" onclick="delete_extraordinary(<?= $period->id ?>)"></i>
+                </td>
+                <td>
+                    <i class="fa fa-window-close fa-lg" onclick="close_extraordinary(<?= $period->id ?>)"></i>
+                </td>                        
             </tr>
             <? endforeach; ?>
         </tbody>

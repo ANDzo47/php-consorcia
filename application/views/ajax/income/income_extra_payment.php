@@ -19,6 +19,26 @@ function delete_extraordinary(id_extraordinary){
     }
 }
 
+function close_extraordinary(id_extraordinary){
+    var answer = confirm("¿Está seguro que desea CERRAR esta expensa extraordinaria?");
+    if (answer){
+        $.post('index.php/ajax/incomes/close_extraordinary', {id:id_extraordinary}, function(rta){
+        if (rta.indexOf("ok") != -1 ){
+            
+            $('#building').trigger('change');
+            $.fancybox({
+                'content' : "<h2>Se ha cerrado correctamente</h2>"
+            });
+        }
+        else
+            $.fancybox({
+                'content' : rta
+            });
+    
+        });            
+    }
+}
+
 function delete_extraordinary_transaction(id_extraordinary_transaction){
 
     $.post('index.php/ajax/incomes/delete_extra_payment', {id:id_extraordinary_transaction}, function(rta){
